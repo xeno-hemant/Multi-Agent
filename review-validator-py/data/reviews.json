@@ -1,0 +1,404 @@
+{
+  "reviews": [
+    {
+      "reviewId": "rev_001",
+      "reviewerName": "Alice Johnson",
+      "reviewerEmail": "alice@example.com",
+      "accountCreatedAt": "2024-06-15",
+      "totalPastReviews": 23,
+      "reviewsLast24h": 1,
+      "productId": "prod_001",
+      "productName": "Sony WH-1000XM5 Headphones",
+      "reviewText": "These headphones are absolutely incredible! The noise cancellation is the best I've ever experienced \u2014 perfect for commuting and working from home. Sound quality is crystal clear with deep, balanced bass. Battery lasts well over 30 hours. Build quality feels premium. Worth every penny for anyone serious about audio.",
+      "starRating": 5,
+      "submittedAt": "2026-06-13",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 100,
+          "verdict": "REAL",
+          "reason": "Established account"
+        },
+        "content": {
+          "score": 95,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific product features",
+          "flags": [
+            "Well-structured sentences",
+            "Specific details",
+            "Varied language"
+          ]
+        },
+        "purchase": {
+          "score": 100,
+          "verdict": "VERIFIED",
+          "reason": "Order found for alice@example.com on product prod_001."
+        },
+        "finalScore": 98,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_002",
+      "reviewerName": "Bob Fake",
+      "reviewerEmail": "bob_fake_99@tempmail.com",
+      "accountCreatedAt": "2026-06-12",
+      "totalPastReviews": 0,
+      "reviewsLast24h": 8,
+      "productId": "prod_002",
+      "productName": "Samsung Galaxy S24 Ultra",
+      "reviewText": "Good product. Very good. I like it. Five stars.",
+      "starRating": 5,
+      "submittedAt": "2026-06-15",
+      "status": "BLOCKED",
+      "validationResult": {
+        "cred": {
+          "score": 0,
+          "verdict": "FAKE",
+          "reason": "New account, excessive reviews"
+        },
+        "content": {
+          "score": 50,
+          "verdict": "GENERIC",
+          "reason": "short review",
+          "flags": [
+            "review < 25 words",
+            "contains generic phrases"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for bob_fake_99@tempmail.com on product prod_002."
+        },
+        "finalScore": 20,
+        "verdict": "BLOCKED"
+      }
+    },
+    {
+      "reviewId": "rev_003",
+      "reviewerName": "Carol Martinez",
+      "reviewerEmail": "carol@example.com",
+      "accountCreatedAt": "2025-05-11",
+      "totalPastReviews": 9,
+      "reviewsLast24h": 1,
+      "productId": "prod_003",
+      "productName": "Dyson V15 Detect Vacuum",
+      "reviewText": "Bought this after my old vacuum gave up. The V15 is genuinely impressive \u2014 the laser reveals dust you never knew was there. The HEPA filter is great for my allergies. Docking and charging is seamless. Only gripe: the bin is smallish for a large house. Otherwise near-perfect. Would strongly recommend.",
+      "starRating": 4,
+      "submittedAt": "2026-06-10",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 100,
+          "verdict": "REAL",
+          "reason": "Established account"
+        },
+        "content": {
+          "score": 90,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific product features",
+          "flags": [
+            "specific details",
+            "varied language"
+          ]
+        },
+        "purchase": {
+          "score": 100,
+          "verdict": "VERIFIED",
+          "reason": "Order found for carol@example.com on product prod_003."
+        },
+        "finalScore": 96,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_004",
+      "reviewerName": "David Singh",
+      "reviewerEmail": "david@example.com",
+      "accountCreatedAt": "2025-11-27",
+      "totalPastReviews": 4,
+      "reviewsLast24h": 2,
+      "productId": "prod_001",
+      "productName": "Sony WH-1000XM5 Headphones",
+      "reviewText": "Great headphones but a bit pricey. The ANC is top-tier, no complaints there. Comfort is excellent for long sessions. The app is intuitive. Downside \u2014 they don't fold flat which is annoying for travel. Overall still a solid 4/5.",
+      "starRating": 4,
+      "submittedAt": "2026-06-12",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 70,
+          "verdict": "SUSPICIOUS",
+          "reason": "Recent reviews"
+        },
+        "content": {
+          "score": 85,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific product features",
+          "flags": [
+            "specific details",
+            "well-structured sentences"
+          ]
+        },
+        "purchase": {
+          "score": 100,
+          "verdict": "VERIFIED",
+          "reason": "Order found for david@example.com on product prod_001."
+        },
+        "finalScore": 82,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_005",
+      "reviewerName": "Eve Spammer",
+      "reviewerEmail": "spammer123@fakeemail.xyz",
+      "accountCreatedAt": "2026-06-14",
+      "totalPastReviews": 0,
+      "reviewsLast24h": 15,
+      "productId": "prod_005",
+      "productName": "Apple MacBook Pro M3",
+      "reviewText": "Amazing product highly recommend best ever buy this now great quality.",
+      "starRating": 5,
+      "submittedAt": "2026-06-15",
+      "status": "BLOCKED",
+      "validationResult": {
+        "cred": {
+          "score": 0,
+          "verdict": "FAKE",
+          "reason": "New account, excessive reviews"
+        },
+        "content": {
+          "score": 50,
+          "verdict": "GENERIC",
+          "reason": "short review",
+          "flags": [
+            "review under 25 words",
+            "contains generic phrases"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for spammer123@fakeemail.xyz on product prod_005."
+        },
+        "finalScore": 20,
+        "verdict": "BLOCKED"
+      }
+    },
+    {
+      "reviewId": "rev_006",
+      "reviewerName": "Frank Nguyen",
+      "reviewerEmail": "frank.nguyen@gmail.com",
+      "accountCreatedAt": "2023-12-28",
+      "totalPastReviews": 41,
+      "reviewsLast24h": 1,
+      "productId": "prod_006",
+      "productName": "LG OLED C3 65\" TV",
+      "reviewText": "I debated between the LG C3 and Samsung S90C for months. Finally chose this and couldn't be happier. Black levels are otherworldly \u2014 watching dark scenes in movies is breathtaking. Gaming mode with 4K@120Hz is flawless for my PS5. The WebOS interface is snappy and well thought out. Only wish the stand were more flexible.",
+      "starRating": 5,
+      "submittedAt": "2026-06-08",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 100,
+          "verdict": "REAL",
+          "reason": "Established account"
+        },
+        "content": {
+          "score": 95,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific product features",
+          "flags": [
+            "specific details",
+            "varied language",
+            "well-structured sentences"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for frank.nguyen@gmail.com on product prod_006."
+        },
+        "finalScore": 78,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_007",
+      "reviewerName": "Grace Liu",
+      "reviewerEmail": "grace@example.com",
+      "accountCreatedAt": "2024-12-12",
+      "totalPastReviews": 12,
+      "reviewsLast24h": 0,
+      "productId": "prod_004",
+      "productName": "Kindle Paperwhite",
+      "reviewText": "Perfect e-reader. The screen is crisp even in direct sunlight. Waterproofing gives me peace of mind at the pool. Battery easily lasts weeks. The flush-front design feels premium. My only wish is for physical page-turn buttons. Overall an excellent device for avid readers.",
+      "starRating": 5,
+      "submittedAt": "2026-06-05",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 100,
+          "verdict": "REAL",
+          "reason": "Established account"
+        },
+        "content": {
+          "score": 90,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific features",
+          "flags": [
+            "specific details",
+            "varied language",
+            "well-structured sentences"
+          ]
+        },
+        "purchase": {
+          "score": 100,
+          "verdict": "VERIFIED",
+          "reason": "Order found for grace@example.com on product prod_004."
+        },
+        "finalScore": 96,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_008",
+      "reviewerName": "Hank Bot",
+      "reviewerEmail": "hank_bot@protonmail.com",
+      "accountCreatedAt": "2026-06-10",
+      "totalPastReviews": 0,
+      "reviewsLast24h": 6,
+      "productId": "prod_007",
+      "productName": "Instant Pot Duo 7-in-1",
+      "reviewText": "Good product. Works well. Recommended. Very happy with purchase.",
+      "starRating": 5,
+      "submittedAt": "2026-06-15",
+      "status": "BLOCKED",
+      "validationResult": {
+        "cred": {
+          "score": 0,
+          "verdict": "FAKE",
+          "reason": "New account, excessive reviews"
+        },
+        "content": {
+          "score": 50,
+          "verdict": "GENERIC",
+          "reason": "short review",
+          "flags": [
+            "review under 25 words",
+            "contains generic phrases"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for hank_bot@protonmail.com on product prod_007."
+        },
+        "finalScore": 20,
+        "verdict": "BLOCKED"
+      }
+    },
+    {
+      "reviewId": "rev_009",
+      "reviewerName": "Iris Patel",
+      "reviewerEmail": "iris.patel@outlook.com",
+      "accountCreatedAt": "2025-08-19",
+      "totalPastReviews": 7,
+      "reviewsLast24h": 1,
+      "productId": "prod_008",
+      "productName": "Nikon Z50 Mirrorless Camera",
+      "reviewText": "Switched from a DSLR and the difference is night and day in terms of portability. The Z50 produces stunning images \u2014 colours are accurate and the dynamic range is impressive. Kit lens is surprisingly capable. AF tracking in video mode is smooth. Battery life is shorter than I'd like but carrying a spare fixes that. Great buy.",
+      "starRating": 4,
+      "submittedAt": "2026-06-11",
+      "status": "APPROVED",
+      "validationResult": {
+        "cred": {
+          "score": 100,
+          "verdict": "REAL",
+          "reason": "Established account"
+        },
+        "content": {
+          "score": 90,
+          "verdict": "GENUINE",
+          "reason": "Detailed review with specific product features",
+          "flags": [
+            "Well-structured sentences",
+            "Product-specific details mentioned"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for iris.patel@outlook.com on product prod_008."
+        },
+        "finalScore": 76,
+        "verdict": "APPROVED"
+      }
+    },
+    {
+      "reviewId": "rev_010",
+      "reviewerName": "Jake Suspicious",
+      "reviewerEmail": "jake_sus@randommail.io",
+      "accountCreatedAt": "2026-06-05",
+      "totalPastReviews": 0,
+      "reviewsLast24h": 3,
+      "productId": "prod_009",
+      "productName": "Vitamix 5200 Blender",
+      "reviewText": "Excellent blender. Very powerful motor. Makes smooth smoothies. Container is big. Easy to clean. Good warranty. Happy with this. Would buy again.",
+      "starRating": 5,
+      "submittedAt": "2026-06-14",
+      "status": "BLOCKED",
+      "validationResult": {
+        "cred": {
+          "score": 10,
+          "verdict": "FAKE",
+          "reason": "New account, excessive reviews"
+        },
+        "content": {
+          "score": 85,
+          "verdict": "GENUINE",
+          "reason": "review has specific details",
+          "flags": [
+            "varied language",
+            "product-specific details"
+          ]
+        },
+        "purchase": {
+          "score": 0,
+          "verdict": "UNVERIFIED",
+          "reason": "No purchase record found for jake_sus@randommail.io on product prod_009."
+        },
+        "finalScore": 38,
+        "verdict": "BLOCKED"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "email": "alice@example.com",
+      "productId": "prod_001",
+      "orderedAt": "2023-12-28"
+    },
+    {
+      "email": "bob@example.com",
+      "productId": "prod_002",
+      "orderedAt": "2024-01-05"
+    },
+    {
+      "email": "carol@example.com",
+      "productId": "prod_003",
+      "orderedAt": "2023-11-14"
+    },
+    {
+      "email": "david@example.com",
+      "productId": "prod_001",
+      "orderedAt": "2024-01-08"
+    },
+    {
+      "email": "grace@example.com",
+      "productId": "prod_004",
+      "orderedAt": "2024-01-09"
+    }
+  ]
+}
